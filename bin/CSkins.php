@@ -76,7 +76,7 @@ class CSkins{
     $num = mysqli_num_rows($return);
 
     if($num != 0){
-      $name = $this->mysqli_result($return,$i,"name");
+      $name = $this->mysqli_result($return,$num,"name");
     }
 
     return $name;
